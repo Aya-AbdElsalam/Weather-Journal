@@ -4,5 +4,12 @@
     "cors": "^2.8.5",
     "express": "^4.21.0",
     "react-scripts": "^5.0.1"
-  }
+  },
+  "script":
+{
+   "dev": "next dev",
+  "build": "next build", 
+    "start": "next start",
+    "lint": "next lint"
+}
 }
