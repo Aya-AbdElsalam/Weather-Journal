@@ -1,12 +1,16 @@
 {
+  "name": "weather-journal-app",
+  "version": "1.0.0",
+  "description": "A simple weather journal application.",
+  "main": "server.js",
   "dependencies": {
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
-    "express": "^4.21.0",
-    "react-scripts": "^5.0.1"
+    "express": "^4.21.0"
   },
+ 
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -17,16 +21,6 @@
       "NODE_VERSION": "20.x"
     }
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "author": "Aya AbdElsalam",
+  "license": "MIT"
 }

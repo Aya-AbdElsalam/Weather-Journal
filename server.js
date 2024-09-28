@@ -4,13 +4,15 @@ let projectData = {};
 const express = require("express");
 const cors = require("cors");
 const app = express();
+const path = require('path');
 
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-app.use(express.static("public"));
+app.use(express.static('src'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Setup Server
 const port = 3000;
