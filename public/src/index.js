@@ -12,7 +12,7 @@ generate.addEventListener("submit", generateWeatherData);
 
 // Async function to GET weather data from the OpenWeatherMap API
 const getWeather = async (zip) => {
-  const url = `${baseUrl}${zip}&appid=${apiKey}&units=metric`;
+  const url = `${baseUrl}${zip}&appid=${apiKey}`;
   const response = await fetch(url);
   if (!response.ok) {
     console.log(feelings.value);
