@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-app.use(express.static("website"));
+app.use(express.static("public"));
 
 // Setup Server
 const port = 3000;
